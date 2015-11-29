@@ -1,10 +1,7 @@
 //
 //  main.cpp
 //  MatrixGL
-//
-//  Created by ZhangJG on 14-2-27.
-//  Copyright (c) 2014Äê ZhangJG. All rights reserved.
-///Users/ZhangJG/Desktop/Xcode/MatrixGL/MatrixGL.xcodeproj
+
 
 #include <iostream>
 
@@ -12,7 +9,7 @@
 
 #include <glut/glut.h>
 #else
-//WindowsÏµÍ³glut
+//Windowsç³»ç»Ÿglut
 #include <gl/glut.h>
 #endif
 #include "camera.h"
@@ -225,7 +222,7 @@ void IdleFunc()
 	glutPostRedisplay();
 }
 
-//äÖÈ¾º¯Êı
+//æ¸²æŸ“å‡½æ•°
 void Rendering()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -358,7 +355,7 @@ int main(int argc, char * argv[])
 	GLsizei iWidth = 800;
 	GLsizei iHeight = 600;
 
-	//¸ù¾İÆÁÄ»·Ö±æÂÊ£¬ÈÃ´°¿ÚÊ¼ÖÕÎ»ÓÚ´°¿ÚÖĞ¼ä
+	//æ ¹æ®å±å¹•åˆ†è¾¨ç‡ï¼Œè®©çª—å£å§‹ç»ˆä½äºçª—å£ä¸­é—´
 	GLsizei wpx = 1240/2 - iWidth/2;
 	GLsizei wpy = 1080/2 - iHeight/2;
 
@@ -374,7 +371,7 @@ int main(int argc, char * argv[])
 	glutMouseFunc(MousePressed);
 	glutMotionFunc(MouseMotion);
 
-	//ÔÚmacÏÂ,OpenglÖ¸Áî¶¼Ó¦·ÅÔÚglutCreateWindowºó
+	//åœ¨macä¸‹,OpenglæŒ‡ä»¤éƒ½åº”æ”¾åœ¨glutCreateWindowå
 	glEnable(GL_DEPTH_TEST);
 
 	InitializeGL();
