@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta name="description" content="Take me to your heart...">
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!--加上字体设置 以免出汉字乱码--> 
+        <title>Take me to your heart... </title>
+
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" href="sources/Feng.png" type="image/x-icon"/><!--用于在网页标题前显示图标-->  
+        <script type="text/javascript" src="js/DisplaySongLyric.js" charset="gb2312"></script>
+         <script type="text/javascript" src="js/pace.min.js"></script>
+        <script type="text/javascript" src="js/three.min.js"></script>
+        <script type="text/javascript" src="js/OrbitControls.js"></script>
+        <script type="text/javascript" src="js/stats.min.js"></script>
+        <script type="text/javascript" src="js/dat.gui.min.js"></script>
+        <script type="text/javascript" src="js/app.js" ></script>
+    </head>
+    <body>
+        
+        <div id="lyr" class="div"><font color="#ff00cc" >Enjoy Yourself</font></div>
+      <!-- <div id="lyr"><marquee direction="up"   behavior=alternate onmouseover=stop() onmouseout=start() scrollAmount="1" scrollDelay="5" > 
+        简单的页面滚动可以用此标签
+         </marquee></div>-->
+        <div id="wrapper"> 
+            
+            <!-- the container to display corresponding information -->
+          <div id="stats"></div>
+          <div id="info">Songs information </div>
+           
+            <div id="controlPanel">
+                <h4 style="color:#0FF">Three work patterns:</h4>
+                <a href="javascript:void(0);" id="playButton">1.Songs to you（next） </a>
+                
+                <p>2.upload your own file</p>
+                <input type="file" id="upload" />
+                <p>3.drag and drop your own file</p>
+              
+            
+              <!--  <small>View on <a  href="https://github.com/Wayou/3D_Audio_Spectrum_VIsualizer" target="_blank">GitHub</a> </small>-->
+                <div id="action">Hide</div>
+            </div>
+            <!-- the container to render the scene -->
+            <div id="visualizer_container"></div>
+            
+        </div>
+      <script type="text/javascript" >   <!-- 在body中使用此.onload开始运行函数   运行的函数将js中的其他代码串成一个整体 -->
+	  window.onload = function() {
+    var visualizer = new Visualizer();
+    visualizer.init();
+	
+    document.getElementById('playButton').onclick = function() {
+       
+        visualizer.nextSong();		
+    };
+	 
+	
+};</script>
+       
+    </body>
+</html>
+
+
+<!-- 不同的js文件加载后相当于把他们全部放在了一起，相互之间可以调用函数（公共函数，有的需要构建对象再调用，看函数类型来定） -->

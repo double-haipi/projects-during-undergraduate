@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B33C53E0-E6F4-4D0C-BB4C-18C088DE2285}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>_VegaGraphic</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graph\camera.h" />
+    <ClInclude Include="graph\lighting.h" />
+    <ClInclude Include="imageIO\imageFormats.h" />
+    <ClInclude Include="imageIO\imageIO.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="minivector\eig3.h" />
+    <ClInclude Include="minivector\mat3d.h" />
+    <ClInclude Include="minivector\minivector.h" />
+    <ClInclude Include="minivector\vec2d.h" />
+    <ClInclude Include="minivector\vec3d.h" />
+    <ClInclude Include="objMesh\objMesh-disjointSet.h" />
+    <ClInclude Include="objMesh\objMesh.h" />
+    <ClInclude Include="objMesh\objMeshEncode.h" />
+    <ClInclude Include="objMesh\objMeshRender.h" />
+    <ClInclude Include="sceneObject\sceneObject.h" />
+    <ClInclude Include="sceneObject\sceneObjectDeformable.h" />
+    <ClInclude Include="sceneObject\sceneObjectWithRestPosition.h" />
+    <ClInclude Include="vegalong.h" />
+    <ClInclude Include="volumetricMesh\tetMesh.h" />
+    <ClInclude Include="volumetricMesh\volumetricMesh.h" />
+    <ClInclude Include="volumetricMesh\volumetricMeshENuMaterial.h" />
+    <ClInclude Include="volumetricMesh\volumetricMeshLoader.h" />
+    <ClInclude Include="volumetricMesh\volumetricMeshMooneyRivlinMaterial.h" />
+    <ClInclude Include="volumetricMesh\volumetricMeshOrthotropicMaterial.h" />
+    <ClInclude Include="volumetricMesh\volumetricMeshParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graph\camera.cpp" />
+    <ClCompile Include="graph\lighting.cpp" />
+    <ClCompile Include="imageIO\imageIO.cpp" />
+    <ClCompile Include="minivector\eig3.cpp" />
+    <ClCompile Include="minivector\mat3d.cpp" />
+    <ClCompile Include="minivector\vec2d.cpp" />
+    <ClCompile Include="minivector\vec3d.cpp" />
+    <ClCompile Include="objMesh\objMesh-disjointSet.cpp" />
+    <ClCompile Include="objMesh\objMesh.cpp" />
+    <ClCompile Include="objMesh\objMeshEncode.cpp" />
+    <ClCompile Include="objMesh\objMeshRender.cpp" />
+    <ClCompile Include="sceneObject\sceneObject.cpp" />
+    <ClCompile Include="sceneObject\sceneObjectDeformable.cpp" />
+    <ClCompile Include="sceneObject\sceneObjectWithRestPosition.cpp" />
+    <ClCompile Include="volumetricMesh\tetMesh.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMesh.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMeshENuMaterial.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMeshLoader.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMeshMooneyRivlinMaterial.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMeshOrthotropicMaterial.cpp" />
+    <ClCompile Include="volumetricMesh\volumetricMeshParser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

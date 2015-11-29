@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="camera">
+      <UniqueIdentifier>{c2352f90-f036-4e92-aadc-24c435221078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entities">
+      <UniqueIdentifier>{9204571d-a9e2-4ff6-a820-ad45ef6bc561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic">
+      <UniqueIdentifier>{b3501797-f5ef-45cf-a74e-b3b8203f663f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{4c6c098b-e9b3-4148-8322-f21c720e1fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderEngine">
+      <UniqueIdentifier>{196f26c4-9881-4c0c-9cc2-3ac6d126e194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{b5b0044e-cc77-4e87-a344-65756ac58ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skybox">
+      <UniqueIdentifier>{39a3afdd-b8b0-491e-8d80-c4cdf6a5c1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="static">
+      <UniqueIdentifier>{525a7127-bc05-4f96-8066-6e804ecd3948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="terrain">
+      <UniqueIdentifier>{7b446ec9-ccba-4c36-855c-e651f98b4724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="textures">
+      <UniqueIdentifier>{f45b8bfe-a0bd-463b-801f-bc8cc8f38af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="toolbox">
+      <UniqueIdentifier>{bb2a2d61-d323-4374-bd22-ecdcd93bf6d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GlobalVar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\ActorCamera.cpp">
+      <Filter>camera</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\Camera.cpp">
+      <Filter>camera</Filter>
+    </ClCompile>
+    <ClCompile Include="camera\FreeCamera.cpp">
+      <Filter>camera</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\Actor.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\Entity.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\EntityRenderer.cpp">
+      <Filter>entities</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic\Light.cpp">
+      <Filter>graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="models\ModelData.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="models\RawModel.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="models\TextureModel.cpp">
+      <Filter>models</Filter>
+    </ClCompile>
+    <ClCompile Include="toolbox\Loader.cpp">
+      <Filter>toolbox</Filter>
+    </ClCompile>
+    <ClCompile Include="toolbox\Maths.cpp">
+      <Filter>toolbox</Filter>
+    </ClCompile>
+    <ClCompile Include="toolbox\MeshLoader.cpp">
+      <Filter>toolbox</Filter>
+    </ClCompile>
+    <ClCompile Include="textures\ModelTexture.cpp">
+      <Filter>textures</Filter>
+    </ClCompile>
+    <ClCompile Include="textures\TerrainTexture.cpp">
+      <Filter>textures</Filter>
+    </ClCompile>
+    <ClCompile Include="textures\TerrainTexturePack.cpp">
+      <Filter>textures</Filter>
+    </ClCompile>
+    <ClCompile Include="terrain\Terrain.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="terrain\TerrainRenderer.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="terrain\TerrainShader.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="static\StaticRenderer.cpp">
+      <Filter>static</Filter>
+    </ClCompile>
+    <ClCompile Include="static\StaticShader.cpp">
+      <Filter>static</Filter>
+    </ClCompile>
+    <ClCompile Include="skybox\SkyBoxRenderer.cpp">
+      <Filter>skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="skybox\SkyBoxShader.cpp">
+      <Filter>skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders\Shader.cpp">
+      <Filter>shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders\ShaderProgram.cpp">
+      <Filter>shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="renderEngine\DisplayManager.cpp">
+      <Filter>renderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="renderEngine\MasterRenderer.cpp">
+      <Filter>renderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GlobalVar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HEUEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\ActorCamera.h">
+      <Filter>camera</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\Camera.h">
+      <Filter>camera</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\FreeCamera.h">
+      <Filter>camera</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\Actor.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\Entity.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\EntityRenderer.h">
+      <Filter>entities</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic\Light.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="models\ModelData.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="models\RawModel.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="models\TextureModel.h">
+      <Filter>models</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbox\Loader.h">
+      <Filter>toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbox\Maths.h">
+      <Filter>toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbox\MeshLoader.h">
+      <Filter>toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbox\Random.h">
+      <Filter>toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="textures\ModelTexture.h">
+      <Filter>textures</Filter>
+    </ClInclude>
+    <ClInclude Include="textures\TerrainTexture.h">
+      <Filter>textures</Filter>
+    </ClInclude>
+    <ClInclude Include="textures\TerrainTexturePack.h">
+      <Filter>textures</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\Terrain.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\TerrainRenderer.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="terrain\TerrainShader.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="static\StaticRenderer.h">
+      <Filter>static</Filter>
+    </ClInclude>
+    <ClInclude Include="static\StaticShader.h">
+      <Filter>static</Filter>
+    </ClInclude>
+    <ClInclude Include="skybox\SkyBoxRenderer.h">
+      <Filter>skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="skybox\SkyBoxShader.h">
+      <Filter>skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders\Shader.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders\ShaderProgram.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="renderEngine\DisplayManager.h">
+      <Filter>renderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="renderEngine\MasterRenderer.h">
+      <Filter>renderEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

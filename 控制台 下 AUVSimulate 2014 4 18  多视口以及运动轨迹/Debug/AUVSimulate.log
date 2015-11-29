@@ -1,0 +1,27 @@
+﻿生成启动时间为 2015/8/9 星期日 19:35:03。
+     1>项目“G:\研究生期间文件\虚拟现实学习资料\EXCISEGL\控制台 下 AUVSimulate 2014 4 18  多视口以及运动轨迹\AUVSimulate.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\win7 Program\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\AUVSimulate.pch" /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt 3DS.CPP AUVSimulate.cpp loadimage.cpp
+         3DS.CPP
+     1>g:\研究生期间文件\虚拟现实学习资料\excisegl\控制台 下 auvsimulate 2014 4 18  多视口以及运动轨迹\3ds.cpp(121): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\win7 program\vs2013\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>g:\研究生期间文件\虚拟现实学习资料\excisegl\控制台 下 auvsimulate 2014 4 18  多视口以及运动轨迹\3ds.cpp(124): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\win7 program\vs2013\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>g:\研究生期间文件\虚拟现实学习资料\excisegl\控制台 下 auvsimulate 2014 4 18  多视口以及运动轨迹\3ds.cpp(134): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\win7 program\vs2013\vc\include\stdio.h(356) : 参见“sprintf”的声明
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         loadimage.cpp
+         AUVSimulate.cpp
+       Link:
+         D:\win7 Program\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\AUVSimulate.exe" /INCREMENTAL /NOLOGO opengl32.lib Glut32.lib Glaux.lib glu32.lib odbc32.lib odbccp32.lib glaux.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\AUVSimulate.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\AUVSimulate.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO .\Debug\3DS.obj
+         .\Debug\AUVSimulate.obj
+         .\Debug\loadimage.obj
+         .\Debug\SceneObj.obj
+         .\Debug\StdAfx.obj
+         AUVSimulate.vcxproj -> G:\研究生期间文件\虚拟现实学习资料\EXCISEGL\控制台 下 AUVSimulate 2014 4 18  多视口以及运动轨迹\.\Debug\AUVSimulate.exe
+     1>已完成生成项目“G:\研究生期间文件\虚拟现实学习资料\EXCISEGL\控制台 下 AUVSimulate 2014 4 18  多视口以及运动轨迹\AUVSimulate.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.19

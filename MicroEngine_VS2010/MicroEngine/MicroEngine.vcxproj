@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE2ED022-E5A7-4F15-B921-4EFB3316013C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MicroEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../JUtil/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../JUtil/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;soil.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../JUtil/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../JUtil/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;soil.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="camera\ActorCamera.cpp" />
+    <ClCompile Include="camera\Camera.cpp" />
+    <ClCompile Include="camera\FreeCamera.cpp" />
+    <ClCompile Include="entities\Actor.cpp" />
+    <ClCompile Include="entities\Entity.cpp" />
+    <ClCompile Include="entities\EntityRenderer.cpp" />
+    <ClCompile Include="GlobalVar.cpp" />
+    <ClCompile Include="graphic\Light.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="models\ModelData.cpp" />
+    <ClCompile Include="models\RawModel.cpp" />
+    <ClCompile Include="models\TextureModel.cpp" />
+    <ClCompile Include="renderEngine\DisplayManager.cpp" />
+    <ClCompile Include="renderEngine\MasterRenderer.cpp" />
+    <ClCompile Include="shaders\Shader.cpp" />
+    <ClCompile Include="shaders\ShaderProgram.cpp" />
+    <ClCompile Include="skybox\SkyBoxRenderer.cpp" />
+    <ClCompile Include="skybox\SkyBoxShader.cpp" />
+    <ClCompile Include="static\StaticRenderer.cpp" />
+    <ClCompile Include="static\StaticShader.cpp" />
+    <ClCompile Include="terrain\Terrain.cpp" />
+    <ClCompile Include="terrain\TerrainRenderer.cpp" />
+    <ClCompile Include="terrain\TerrainShader.cpp" />
+    <ClCompile Include="textures\ModelTexture.cpp" />
+    <ClCompile Include="textures\TerrainTexture.cpp" />
+    <ClCompile Include="textures\TerrainTexturePack.cpp" />
+    <ClCompile Include="toolbox\Loader.cpp" />
+    <ClCompile Include="toolbox\Maths.cpp" />
+    <ClCompile Include="toolbox\MeshLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera\ActorCamera.h" />
+    <ClInclude Include="camera\Camera.h" />
+    <ClInclude Include="camera\FreeCamera.h" />
+    <ClInclude Include="entities\Actor.h" />
+    <ClInclude Include="entities\Entity.h" />
+    <ClInclude Include="entities\EntityRenderer.h" />
+    <ClInclude Include="GlobalVar.h" />
+    <ClInclude Include="graphic\Light.h" />
+    <ClInclude Include="HEUEngine.h" />
+    <ClInclude Include="models\ModelData.h" />
+    <ClInclude Include="models\RawModel.h" />
+    <ClInclude Include="models\TextureModel.h" />
+    <ClInclude Include="renderEngine\DisplayManager.h" />
+    <ClInclude Include="renderEngine\MasterRenderer.h" />
+    <ClInclude Include="shaders\Shader.h" />
+    <ClInclude Include="shaders\ShaderProgram.h" />
+    <ClInclude Include="skybox\SkyBoxRenderer.h" />
+    <ClInclude Include="skybox\SkyBoxShader.h" />
+    <ClInclude Include="static\StaticRenderer.h" />
+    <ClInclude Include="static\StaticShader.h" />
+    <ClInclude Include="terrain\Terrain.h" />
+    <ClInclude Include="terrain\TerrainRenderer.h" />
+    <ClInclude Include="terrain\TerrainShader.h" />
+    <ClInclude Include="textures\ModelTexture.h" />
+    <ClInclude Include="textures\TerrainTexture.h" />
+    <ClInclude Include="textures\TerrainTexturePack.h" />
+    <ClInclude Include="toolbox\Loader.h" />
+    <ClInclude Include="toolbox\Maths.h" />
+    <ClInclude Include="toolbox\MeshLoader.h" />
+    <ClInclude Include="toolbox\Random.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

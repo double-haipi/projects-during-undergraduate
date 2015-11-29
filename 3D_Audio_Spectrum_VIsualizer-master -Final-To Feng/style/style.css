@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    font-family: arial, "Microsoft YaHei";
+    background:#000;
+    color: #fefefe;
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+	font-size:14px;
+	position:relative;
+	
+}
+/*fix for pace*/
+.pace-activity{
+    display: none!important;
+}
+
+#playButton{
+    color:yellow;
+}
+#controlPanel {
+	font-size:12px;
+	font-weight:100;
+    width: 180px;
+    height: 220px;//
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 30px #555;
+    z-index: 99;
+    background-color: rgba(39, 40, 34, 0.8);
+    /*隐藏控制面板，jQuery中有更简单的方法*/
+	transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+}
+#info {
+	color:#3F9;
+	text-align:center;
+	top:5px;
+	left:520px;
+    position: absolute;
+	width: 200px;
+    height: 30px;
+}
+#action {
+	color:#CCC;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+	text-align:center;
+    background: #111;
+	width: 200px;
+    height: 20px;
+    //padding-top: 90px;
+    cursor: pointer;
+}
+#action: hover {
+	height:20px;
+    color: #ddd;
+    background: #333;
+}
+
+#output{width:80px;
+	height:20px;
+	margin-top:80px;
+	margin-left:540px;
+	}
+
+#upload {
+    width: 180px;
+	
+	
+}
+
+#lyr{
+	
+	font-size: 13px;
+	font-weight: 100;
+	color:#3F6;
+	width: 200px;
+	height: 200px;
+    text-align:center;
+
+	border:0.2px solid #0CF;
+	padding: 5px;
+	position: absolute;
+	
+	margin-top: 60px ;
+	margin-left:510px;
+	/*box-shadow: 0 0 30px #555; 设置阴影，构造立体效果*/
+	/* z-index: 120;*/
+	/*background-color: rgba(0,0, 0, 1);*/
+    /*overflow-y:hidden;*/
+/*padding-top:80px;
+text-align:left;
+padding-left:100px;*/
+line-height:25px;
+/*padding-bottom:50px;*/
+	
+
+
+overflow-y:scroll; /*必须使用滚动条*/
+
+line-height:25px;
+font-size:13px; /*歌词字号*/
+}
+
+
+	/*注意：在web开发不同的代码中的注释符号是不同的，使用不当会使有些代码被跳过执行不了，影响结果*/

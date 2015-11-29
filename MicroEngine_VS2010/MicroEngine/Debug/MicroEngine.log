@@ -1,0 +1,94 @@
+﻿生成启动时间为 2015/8/1 星期六 9:15:21。
+     1>项目“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\MicroEngine\MicroEngine.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\MicroEngine.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../JUtil/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt camera\ActorCamera.cpp camera\Camera.cpp camera\FreeCamera.cpp entities\Actor.cpp entities\Entity.cpp entities\EntityRenderer.cpp GlobalVar.cpp graphic\Light.cpp main.cpp models\ModelData.cpp models\RawModel.cpp models\TextureModel.cpp renderEngine\DisplayManager.cpp renderEngine\MasterRenderer.cpp shaders\Shader.cpp shaders\ShaderProgram.cpp skybox\SkyBoxRenderer.cpp skybox\SkyBoxShader.cpp static\StaticRenderer.cpp static\StaticShader.cpp terrain\Terrain.cpp terrain\TerrainRenderer.cpp terrain\TerrainShader.cpp textures\ModelTexture.cpp textures\TerrainTexture.cpp textures\TerrainTexturePack.cpp toolbox\Loader.cpp toolbox\Maths.cpp toolbox\MeshLoader.cpp
+         MeshLoader.cpp
+         Maths.cpp
+         Loader.cpp
+         TerrainTexturePack.cpp
+         TerrainTexture.cpp
+         ModelTexture.cpp
+         TerrainShader.cpp
+         TerrainRenderer.cpp
+         Terrain.cpp
+         StaticShader.cpp
+         StaticRenderer.cpp
+         SkyBoxShader.cpp
+         SkyBoxRenderer.cpp
+         ShaderProgram.cpp
+         Shader.cpp
+         MasterRenderer.cpp
+         DisplayManager.cpp
+         TextureModel.cpp
+         RawModel.cpp
+         ModelData.cpp
+         正在生成代码...
+         正在编译...
+         main.cpp
+         Light.cpp
+         GlobalVar.cpp
+         EntityRenderer.cpp
+         Entity.cpp
+         Actor.cpp
+         FreeCamera.cpp
+         Camera.cpp
+         ActorCamera.cpp
+         正在生成代码...
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\MicroEngine.exe.embed.manifest.res" Debug\MicroEngine_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\MicroEngine.exe" /INCREMENTAL /NOLOGO /LIBPATH:../JUtil/bin /LIBPATH:../JUtil/lib opengl32.lib glew32.lib glfw3.lib soil.lib assimp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MicroEngine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\MicroEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\MicroEngine.lib" /MACHINE:X86 Debug\MicroEngine.exe.embed.manifest.res
+         Debug\ActorCamera.obj
+         Debug\Camera.obj
+         Debug\FreeCamera.obj
+         Debug\Actor.obj
+         Debug\Entity.obj
+         Debug\EntityRenderer.obj
+         Debug\GlobalVar.obj
+         Debug\Light.obj
+         Debug\main.obj
+         Debug\ModelData.obj
+         Debug\RawModel.obj
+         Debug\TextureModel.obj
+         Debug\DisplayManager.obj
+         Debug\MasterRenderer.obj
+         Debug\Shader.obj
+         Debug\ShaderProgram.obj
+         Debug\SkyBoxRenderer.obj
+         Debug\SkyBoxShader.obj
+         Debug\StaticRenderer.obj
+         Debug\StaticShader.obj
+         Debug\Terrain.obj
+         Debug\TerrainRenderer.obj
+         Debug\TerrainShader.obj
+         Debug\ModelTexture.obj
+         Debug\TerrainTexture.obj
+         Debug\TerrainTexturePack.obj
+         Debug\Loader.obj
+         Debug\Maths.obj
+         Debug\MeshLoader.obj
+         soil.lib(SOIL.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+     1>LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         正在生成代码
+         已完成代码的生成
+     1>soil.lib(SOIL.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(SOIL.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(stb_image_aug.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(stb_image_aug.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(image_helper.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(image_DXT.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\MicroEngine.exe.embed.manifest" /manifest Debug\MicroEngine.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         MicroEngine.vcxproj -> G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Debug\MicroEngine.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\MicroEngine.unsuccessfulbuild”。
+         正在对“Debug\MicroEngine.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\MicroEngine\MicroEngine.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:17.82

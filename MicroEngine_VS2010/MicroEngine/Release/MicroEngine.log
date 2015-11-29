@@ -1,0 +1,54 @@
+﻿生成启动时间为 2015/8/9 星期日 21:02:36。
+     1>项目“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\MicroEngine\MicroEngine.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\MicroEngine.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../JUtil/include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\MicroEngine.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../JUtil/lib opengl32.lib glew32.lib glfw3.lib soil.lib assimp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\MicroEngine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\MicroEngine.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\MicroEngine.lib" /MACHINE:X86 Release\ActorCamera.obj
+         Release\Camera.obj
+         Release\FreeCamera.obj
+         Release\Actor.obj
+         Release\Entity.obj
+         Release\EntityRenderer.obj
+         Release\GlobalVar.obj
+         Release\Light.obj
+         Release\main.obj
+         Release\ModelData.obj
+         Release\RawModel.obj
+         Release\TextureModel.obj
+         Release\DisplayManager.obj
+         Release\MasterRenderer.obj
+         Release\Shader.obj
+         Release\ShaderProgram.obj
+         Release\SkyBoxRenderer.obj
+         Release\SkyBoxShader.obj
+         Release\StaticRenderer.obj
+         Release\StaticShader.obj
+         Release\Terrain.obj
+         Release\TerrainRenderer.obj
+         Release\TerrainShader.obj
+         Release\ModelTexture.obj
+         Release\TerrainTexture.obj
+         Release\TerrainTexturePack.obj
+         Release\Loader.obj
+         Release\Maths.obj
+         Release\MeshLoader.obj
+         正在生成代码
+         已完成代码的生成
+     1>soil.lib(SOIL.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(SOIL.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(stb_image_aug.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(stb_image_aug.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(image_helper.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>soil.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“soil.lib(image_DXT.obj)”或在“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         MicroEngine.vcxproj -> G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\MicroEngine.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\Release\MicroEngine.exe;#1" /manifest Release\MicroEngine.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\MicroEngine.unsuccessfulbuild”。
+         正在对“Release\MicroEngine.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\研究生期间文件\虚拟现实学习资料\游戏引擎\MicroEngine_VS2010\MicroEngine\MicroEngine.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.55

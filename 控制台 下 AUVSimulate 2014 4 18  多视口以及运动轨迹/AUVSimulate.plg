@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AUVSimulate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/AUVSimulate.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\张翠翠 毕业设计\控制台 下 AUVSimulate 2014 4 18  多视口以及运动轨迹\AUVSimulate.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+opengl32.lib Glut32.lib Glaux.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glaux.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/AUVSimulate.pdb" /debug /machine:I386 /out:"Debug/AUVSimulate.exe" /pdbtype:sept 
+".\Debug\3DS.OBJ"
+".\Debug\AUVSimulate.obj"
+".\Debug\loadimage.obj"
+".\Debug\SceneObj.obj"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7.tmp"
+<h3>Output Window</h3>
+Compiling...
+AUVSimulate.cpp
+e:\张翠翠 毕业设计\控制台 下 auvsimulate 2014 4 18  多视口以及运动轨迹\auvsimulate.cpp(25) : fatal error C1853: 'Debug/AUVSimulate.pch' is not a precompiled header file created with this compiler
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+AUVSimulate.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

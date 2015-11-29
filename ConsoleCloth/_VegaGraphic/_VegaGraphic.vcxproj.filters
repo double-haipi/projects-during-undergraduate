@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="graph">
+      <UniqueIdentifier>{f0666637-2692-4a62-80c4-67ef218ef58e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imageIO">
+      <UniqueIdentifier>{36bb08e3-bd36-4bf9-bba4-1dcbcb00bcfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="minivector">
+      <UniqueIdentifier>{cb92001f-9125-460f-a32d-adddeb4189ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objMesh">
+      <UniqueIdentifier>{55defefc-c3d5-4d12-8731-56fc2d5e0bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sceneObject">
+      <UniqueIdentifier>{51b80e0c-302c-43af-b97b-10d3663762c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="volumetricMesh">
+      <UniqueIdentifier>{4cdd1301-fe13-4b6e-a6d6-3a08b95797f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="vegalong.h" />
+    <ClInclude Include="graph\camera.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\lighting.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="imageIO\imageFormats.h">
+      <Filter>imageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="imageIO\imageIO.h">
+      <Filter>imageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="minivector\eig3.h">
+      <Filter>minivector</Filter>
+    </ClInclude>
+    <ClInclude Include="minivector\mat3d.h">
+      <Filter>minivector</Filter>
+    </ClInclude>
+    <ClInclude Include="minivector\minivector.h">
+      <Filter>minivector</Filter>
+    </ClInclude>
+    <ClInclude Include="minivector\vec2d.h">
+      <Filter>minivector</Filter>
+    </ClInclude>
+    <ClInclude Include="minivector\vec3d.h">
+      <Filter>minivector</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\tetMesh.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMesh.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMeshENuMaterial.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMeshLoader.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMeshMooneyRivlinMaterial.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMeshOrthotropicMaterial.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="volumetricMesh\volumetricMeshParser.h">
+      <Filter>volumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneObject\sceneObject.h">
+      <Filter>sceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneObject\sceneObjectDeformable.h">
+      <Filter>sceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneObject\sceneObjectWithRestPosition.h">
+      <Filter>sceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="objMesh\objMesh.h">
+      <Filter>objMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="objMesh\objMesh-disjointSet.h">
+      <Filter>objMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="objMesh\objMeshEncode.h">
+      <Filter>objMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="objMesh\objMeshRender.h">
+      <Filter>objMesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graph\camera.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\lighting.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="imageIO\imageIO.cpp">
+      <Filter>imageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="minivector\eig3.cpp">
+      <Filter>minivector</Filter>
+    </ClCompile>
+    <ClCompile Include="minivector\mat3d.cpp">
+      <Filter>minivector</Filter>
+    </ClCompile>
+    <ClCompile Include="minivector\vec2d.cpp">
+      <Filter>minivector</Filter>
+    </ClCompile>
+    <ClCompile Include="minivector\vec3d.cpp">
+      <Filter>minivector</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\tetMesh.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMesh.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMeshENuMaterial.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMeshLoader.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMeshMooneyRivlinMaterial.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMeshOrthotropicMaterial.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="volumetricMesh\volumetricMeshParser.cpp">
+      <Filter>volumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneObject\sceneObject.cpp">
+      <Filter>sceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneObject\sceneObjectDeformable.cpp">
+      <Filter>sceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneObject\sceneObjectWithRestPosition.cpp">
+      <Filter>sceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="objMesh\objMesh.cpp">
+      <Filter>objMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="objMesh\objMesh-disjointSet.cpp">
+      <Filter>objMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="objMesh\objMeshEncode.cpp">
+      <Filter>objMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="objMesh\objMeshRender.cpp">
+      <Filter>objMesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
